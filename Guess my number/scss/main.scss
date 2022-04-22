@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$primary-color: #3f3e3e;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: $primary-color
+    /* background-color: #60b347; */
+  }
+}
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 0 1px 4px rgba(255, 255, 255, 0.2);
+}
+/* LAYOUT */
+.header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid $primary-color;
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__number {
+    background: #eee;
+    color: #333;
+    font-size: 4rem;
+    width: 13rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  &__between-number {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  &__btn-again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+}
+.main {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &__left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__right {
+    width: 52rem;
+  font-size: 2rem;
+  }
+  &__guess-number{
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 3rem;
+    padding: 2rem;
+    width: 20rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  &__message {
+    margin-bottom: 8rem;
+    height: 3rem;
+  }
+  &__label-score {
+    margin-bottom: 2rem;
+  }
+}
+/* ELEMENTS STYLE */
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+
+
+
+
